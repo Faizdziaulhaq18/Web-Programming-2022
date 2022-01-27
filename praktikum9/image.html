@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faiz Dziaulhaq | Pilih Gambar</title>
+</head>
+<body>
+    <style>
+        *{
+            margin-top: auto;
+            align-items: center;
+            text-align: center;
+            border-style: solid;
+            font-size: 20pt;
+        }
+    </style>
+    <select name="" id="daftar" onchange="tampil()">
+        <option value="">-Pilih Hewan-</option>
+        <option value="pinguin">Pinguin</option>
+        <option value="singa">Singa</option>
+        <option value="gorila">Gorila</option>
+        <option value="gajah">Gajah</option>
+        <option value="badak">Badak</option>
+        <option value="hiu">Hiu</option>
+        <option value="gurita">Gurita</option>
+        <option value="jalak">Jalak</option>
+        <option value="elang">Elang</option>
+        <option value="kuda">Kuda</option>
+
+    </select>
+    <div id="hasil"></div>
+
+    <script>
+        let daftar = document.getElementById("daftar")
+        let hasil = document.getElementById("hasil")
+
+        function tampil(){
+            switch (daftar.value) {
+                case "pinguin":
+                hasil.innerHTML = '<img src="https://t-2.tstatic.net/jogja/foto/bank/images/kaisar-penguin-modern-terbesar_20171213_211813.jpg" alt="">'
+                alert("ini adalah gambar Pinguin")
+                break;
+
+                case "singa":
+                hasil.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/1200px-Lion_waiting_in_Namibia.jpg" alt="">'
+                alert("ini adalah gambar singa")
+                break;
+
+                case "gorila":
+                hasil.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/1200px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg" alt="">'
+                alert("ini adalah gambar gorila")
+                break;
+
+                case "gajah":
+                hasil.innerHTML = '<img src="https://cdn.idntimes.com/content-images/community/2019/08/wlds43-654640-2400-958e9aa679a799d1f221b159ae3731ce_600x400.jpg" alt="">'
+                alert("ini adalah gambar Gajah")
+                break;
+
+                case "badak":
+                hasil.innerHTML = '<img src="https://akcdn.detik.net.id/visual/2021/06/09/ceratotherium-simum-cottoni-northern-white-rhinoceros_169.jpeg?w=650" alt="">'
+                alert("ini adalah gambar Badak")
+                break;
+
+                case "hiu":
+                hasil.innerHTML = '<img src="https://asset.kompas.com/crops/i7BBSKgP-zvo6xmWCGymrWCGeGw=/108x0:918x540/750x500/data/photo/2018/05/12/3963756079.jpg" alt="">'
+                alert("ini adalah gambar Hiu")
+                break;
+
+                case "gurita":
+                hasil.innerHTML = '<img src="https://asset.kompas.com/crops/a7VN0s6h1Qvwbzl1I_9kqvVv0aA=/62x58:971x664/750x500/data/photo/2020/10/21/5f8fc4119cbe1.jpg" alt="">'
+                alert("ini adalah gambar Gurita")
+                break;
+
+                case "jalak":
+                hasil.innerHTML = '<img src="https://www.jalaksuren.net/wp-content/uploads/2019/04/Mengetahui-Berbagai-Manfaat-Memelihara-Burung-Jalak-Suren.jpg" alt="">'
+                alert("ini adalah gambar Jalak")
+                break;
+
+                case "elang":
+                hasil.innerHTML = '<img src="https://assets-a1.kompasiana.com/items/album/2016/04/23/elang-1-571aa253369773180d9c76e7.jpg" alt="">'
+                alert("ini adalah gambar Elang")
+                break;
+
+                case "kuda":
+                hasil.innerHTML = '<img src="https://akcdn.detik.net.id/visual/2016/02/19/74990601-4c0c-4cc7-bda0-32df5c9abcb5_169.jpg?w=650" alt="">'
+                alert("ini adalah gambar Kuda")
+                break;
+
+                default:
+                    hasil.innerHTML =""
+            }
+        }
+    </script>
+</body>
+</html>
